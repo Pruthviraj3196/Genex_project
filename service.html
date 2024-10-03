@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="bg-gray-800 p-4">
+        <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <div class="ml-4">
+                <img src="assets/logo.png" alt="Company Logo" class="h-12">
+            </div>
+
+            <!-- Links for larger screens -->
+            <ul class="hidden md:flex md:space-x-8 md:mr-10 md:items-center">
+                <li>
+                    <a href="/" class="text-white font-bold hover:text-yellow-400">HOME</a>
+                </li>
+                <li>
+                    <a href="/services" class="text-white font-bold hover:text-yellow-400">SERVICES</a>
+                </li>
+                <li>
+                    <a href="/training.html" class="text-white font-bold hover:text-yellow-400">TRAINING</a>
+                </li>
+                <li>
+                    <a href="/jobs" class="text-white font-bold hover:text-yellow-400">JOBS</a>
+                </li>
+                <li>
+                    <a href="/support" class="text-white font-bold hover:text-yellow-400">SUPPORT</a>
+                </li>
+                <li>
+                    <!-- Search Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 text-white hover:text-yellow-400 cursor-pointer" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8 16l-4 4m0 0l4-4m-4 4V4" />
+                    </svg>
+                </li>
+            </ul>
+
+            <!-- Mobile Menu (visible on small screens) -->
+            <ul class="md:hidden space-y-4">
+                <li>
+                    <a href="/" class="text-white font-bold hover:text-yellow-400 block">HOME</a>
+                </li>
+                <li>
+                    <a href="/services" class="text-white font-bold hover:text-yellow-400 block">SERVICES</a>
+                </li>
+                <li>
+                    <a href="/training" class="text-white font-bold hover:text-yellow-400 block">TRAINING</a>
+                </li>
+                <li>
+                    <a href="/jobs" class="text-white font-bold hover:text-yellow-400 block">JOBS</a>
+                </li>
+                <li>
+                    <a href="/support" class="text-white font-bold hover:text-yellow-400 block">SUPPORT</a>
+                </li>
+                <li>
+                    <!-- Search Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 text-white hover:text-yellow-400 cursor-pointer" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8 16l-4 4m0 0l4-4m-4 4V4" />
+                    </svg>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- IMAGE SECTION -->
+    <section class="bg-cover bg-center bg-no-repeat w-full h-screen overflow-x-hidden flex items-center"
+        style="background-image: url('../../assets/service.png');">
+    </section>
+
+    <!-- services -->
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-white shadow-lg rounded-lg p-6 ">
+            <img src="/assets/Devops.jpeg" alt="DevOps Development" class="w-full h-40 object-cover rounded-md mb-4">
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">DevOps Development</h2>
+            <p class="text-gray-600 mb-4"> streamline your development and operations with our comprehensive DevOps
+                solutions.
+                we integrate automation and continuous delivery to enhance efficiency and accelerate your project's
+                success.</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Learn more</button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <img src="/assets/Devops.jpeg" alt="Splunk Development" class="w-full h-40 object-cover rounded-md mb-4">
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">Splunk Development</h2>
+            <p class="text-gray-600 mb-4"> streamline your development and operations with our comprehensive DevOps
+                solutions.
+                we integrate automation and continuous delivery to enhance efficiency and accelerate your project's
+                success.</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Learn more</button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <img src="/assets/fullstack.jpeg" alt="FullStack Development"
+                class="w-full h-40 object-cover rounded-md mb-4">
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">FullStack Development</h2>
+            <p class="text-gray-600 mb-4"> streamline your development and operations with our comprehensive DevOps
+                solutions.
+                we integrate automation and continuous delivery to enhance efficiency and accelerate your project's
+                success.</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Learn more</button>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <img src="/assets/web-dev.png" alt="Web Development" class="w-full h-40 object-cover rounded-md mb-4">
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">Web Development</h2>
+            <p class="text-gray-600 mb-4"> streamline your development and operations with our comprehensive DevOps
+                solutions.
+                we integrate automation and continuous delivery to enhance efficiency and accelerate your project's
+                success.
+            </p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Learn more</button>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <img src="/assets/chatbot.png" alt="ChatBot Development" class="w-full h-40 object-cover rounded-md mb-4">
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">ChatBot Development</h2>
+            <p class="text-gray-600 mb-4"> streamline your development and operations with our comprehensive DevOps
+                solutions.
+                we integrate automation and continuous delivery to enhance efficiency and accelerate your project's
+                success.
+            </p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Learn more</button>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <img src="/assets/servicenow.jpeg" alt="ServiceNow Development"
+                class="w-full h-40 object-cover rounded-md mb-4">
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">ServiceNow Development</h2>
+            <p class="text-gray-600 mb-4"> streamline your development and operations with our comprehensive DevOps
+                solutions.
+                we integrate automation and continuous delivery to enhance efficiency and accelerate your project's
+                success.</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Learn more</button>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <img src="/assets/Devops.jpeg" alt="AWS Development" class="w-full h-40 object-cover rounded-md mb-4">
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">AWS Development</h2>
+            <p class="text-gray-600 mb-4"> streamline your development and operations with our comprehensive DevOps
+                solutions.
+                we integrate automation and continuous delivery to enhance efficiency and accelerate your project's
+                success.</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Learn more</button>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <img src="/assets/ui-ux.jpeg" alt="UI/UX Designer" class="w-full h-40 object-cover rounded-md mb-4">
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">UI/UX Designer</h2>
+            <p class="text-gray-600 mb-4"> streamline your development and operations with our comprehensive DevOps
+                solutions.
+                we integrate automation and continuous delivery to enhance efficiency and accelerate your project's
+                success.</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Learn more</button>
+        </div>
+    </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="bg-gray-200 p-6 md:p-10">
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">Contact Us</h2>
+        <form class="max-w-lg mx-auto">
+
+            <!-- Name Input -->
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm md:text-base">Name</label>
+                <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm md:text-base"
+                    placeholder="Your Name" />
+            </div>
+
+            <!-- Email Input -->
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm md:text-base">Email</label>
+                <input type="email" class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm md:text-base"
+                    placeholder="Your Email" />
+            </div>
+
+            <!-- Message Input -->
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm md:text-base">Message</label>
+                <textarea class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm md:text-base"
+                    placeholder="Your Message"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button class="bg-black text-white py-2 px-4 rounded-lg w-full md:w-auto">Submit</button>
+        </form>
+    </section>
+
+    <!-- CONSULTING AREA -->
+
+    <section class="py-12"></section>
+    <h2 class="text-3xl text-center font-bold mb-10">TECHNOLOGY CONSULTING ARENA</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto   ">
+        <div class="flex justify-center border w-32 h-32 ">
+            <img src="/assets/qlik-vector.png" alt="Qlik" class="w-24">
+        </div>
+        <div class="flex justify-center border w-32 h-32">
+            <img src="/assets/hive-logo.png" alt="Hive" class="w-24">
+        </div>
+        <div class="flex justify-center border w-32 h-32">
+            <img src="/assets/Tableau-Logo.png" alt="Tableau" class="w-24">
+        </div>
+        <div class="flex justify-center border w-32 h-32">
+            <img src="/assets/SAP_NetWeaver.png" alt="SAP NetWeaver" class="w-24">
+        </div>
+        <div class="flex justify-center border w-32 h-32">
+            <img src="/assets/informatica.png" alt="Informatica" class="w-24">
+        </div>
+        <div class="flex justify-center border w-32 h-32">
+            <img src="/assets/cloudera.png" alt="Cloudera" class="w-24">
+        </div>
+    </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="text-white py-10">
+        <!-- First Row - Logo -->
+        <div class="flex justify-center mb-8">
+            <img src="../../assets/footer.png" alt="GenexCorp Logo" class="w-[950px]" />
+        </div>
+
+        <!-- Second Row - Footer Information -->
+        <div class="grid text-black grid-cols-1 md:grid-cols-3 gap-8 px-5 md:px-20">
+            <!-- First Column - About GenexCorp -->
+            <div>
+                <h3 class="text-lg mb-4 font-extrabold">ABOUT GENEXCORP</h3>
+                <p class="text-sm mb-5">
+                    Some believe in the power of numbers. Some believe in the power of
+                    technology. We believe in the power of people, power of human touch
+                    which brings best out of the best and the impact people can have on
+                    technology.
+                </p>
+                <!-- Social Media Icons -->
+                <div class="flex space-x-4">
+                    <i class="fab fa-facebook-f text-xl cursor-pointer hover:text-blue-500"></i>
+                    <i class="fab fa-twitter text-xl cursor-pointer hover:text-blue-400"></i>
+                    <i class="fab fa-linkedin-in text-xl cursor-pointer hover:text-blue-700"></i>
+                </div>
+            </div>
+
+            <!-- Second Column - Quick Links -->
+            <div>
+                <h3 class="text-lg font-extrabold mb-4">QUICK LINKS</h3>
+                <ul class="space-y-2">
+                    <li class="hover:underline cursor-pointer">HOME</li>
+                    <li class="hover:underline cursor-pointer">Our Objective</li>
+                    <li class="hover:underline cursor-pointer">Portfolio</li>
+                    <li class="hover:underline cursor-pointer">Corporate Training</li>
+                    <li class="hover:underline cursor-pointer">Career Augmentation Training</li>
+                    <li class="hover:underline cursor-pointer">Jobs</li>
+                    <li class="hover:underline cursor-pointer">Support</li>
+                </ul>
+            </div>
+
+            <!-- Third Column - Contact Information -->
+            <div>
+                <h3 class="text-lg font-extrabold mb-4">CONTACT INFORMATION</h3>
+                <p class="text-sm mb-2">
+                    Address - VT Plaza, 4th Floor, KPHB Colony, Kukatpally, Road # 1,
+                    Hyderabad - 500085, Telangana, India
+                </p>
+                <p class="text-sm mb-2">Phone: +91 9876543210</p>
+                <p class="text-sm">Email: info@genexcorp.com</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
