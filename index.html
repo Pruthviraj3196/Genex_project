@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genex Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- For Font Awesome icons -->
+  <style>
+    .hero-background {
+      background-image: url("./assets//ofcimg2.jpg"); /* Replace with the correct path to your image */
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-4">
+    <div class="flex justify-between items-center">
+      <!-- Logo -->
+      <div class="ml-4">
+        <img src="assets/logo.png" alt="Company Logo" class="h-12">
+      </div>
+
+      <!-- Links for larger screens -->
+      <ul class="hidden md:flex md:space-x-8 md:mr-10 md:items-center">
+        <li>
+          <a href="/" class="text-white font-bold hover:text-yellow-400">HOME</a>
+        </li>
+        <li>
+          <a href="/services" class="text-white font-bold hover:text-yellow-400">SERVICES</a>
+        </li>
+        <li>
+          <a href="/training.html" class="text-white font-bold hover:text-yellow-400">TRAINING</a>
+        </li>
+        <li>
+          <a href="/jobs" class="text-white font-bold hover:text-yellow-400">JOBS</a>
+        </li>
+        <li>
+          <a href="/support" class="text-white font-bold hover:text-yellow-400">SUPPORT</a>
+        </li>
+        <li>
+          <!-- Search Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white hover:text-yellow-400 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16l-4 4m0 0l4-4m-4 4V4" />
+          </svg>
+        </li>
+      </ul>
+
+      <!-- Mobile Menu (visible on small screens) -->
+      <ul class="md:hidden space-y-4">
+        <li>
+          <a href="/" class="text-white font-bold hover:text-yellow-400 block">HOME</a>
+        </li>
+        <li>
+          <a href="/services" class="text-white font-bold hover:text-yellow-400 block">SERVICES</a>
+        </li>
+        <li>
+          <a href="/training" class="text-white font-bold hover:text-yellow-400 block">TRAINING</a>
+        </li>
+        <li>
+          <a href="/jobs" class="text-white font-bold hover:text-yellow-400 block">JOBS</a>
+        </li>
+        <li>
+          <a href="/support" class="text-white font-bold hover:text-yellow-400 block">SUPPORT</a>
+        </li>
+        <li>
+          <!-- Search Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white hover:text-yellow-400 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16l-4 4m0 0l4-4m-4 4V4" />
+          </svg>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-background bg-cover bg-center bg-no-repeat w-full h-screen overflow-x-hidden flex items-center">
+    <!-- Content aligned to the left on large screens, centered on small screens -->
+    <div class="bg-opacity-50 p-10 rounded-lg max-w-lg text-left ml-10 md:ml-20 lg:ml-40 sm:ml-5 sm:max-w-sm sm:text-center">
+      <h1 class="text-4xl lg:text-6xl font-bold mb-4 lg:mb-8 text-white">WELCOME TO GENEX</h1>
+      <p class="text-xl lg:text-3xl font-bold text-white">Innovative IT Services to Drive Your Success</p>
+      <button class="mt-6 bg-white text-black font-bold py-3 px-8 lg:py-4 lg:px-12 rounded-lg">Explore More</button>
+    </div>
+  </section>
+
+   <!-- What We Provide Section -->
+  <div class="flex flex-col items-center py-10 px-5">
+    <!-- Heading -->
+    <h1 class="text-3xl font-bold mb-10 text-center">WHAT WE PROVIDE</h1>
+
+    <!-- Grid Layout -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 w-full max-w-6xl">
+      
+      <!-- First Section -->
+      <div class="flex flex-col items-center text-center p-5 bg-white shadow-lg rounded-lg">
+        <img
+          src="https://img.freepik.com/free-photo/business-colleagues-discussing-work-during-coffee-break_1262-17227.jpg?t=st=1727092618~exp=1727093218~hmac=22924d6d9f08f84407eb88b78343fe8386c446b2d57d04144171c09a6d166142"
+          alt="Service 1"
+          class="mb-5 rounded-2xl w-full h-52 object-cover"
+        />
+        <h2 class="text-xl font-semibold mb-3">TRAININGS / INTERNSHIPS</h2>
+        <p class="mb-5">
+          Experience Our Unique Training Approach. If you're ready to advance your career in BI and Analytics, this is the perfect place to build a solid foundation and get ahead.
+        </p>
+        <div>
+          <button class="bg-black text-white px-4 py-2 rounded-lg mr-3">Learn More</button>
+          <button class="bg-slate-300 text-gray-700 px-4 py-2 rounded-lg">Get Started</button>
+        </div>
+      </div>
+
+      <!-- Second Section -->
+      <div class="flex flex-col items-center text-center p-5 bg-white shadow-lg rounded-lg">
+        <img
+          src="https://img.freepik.com/free-photo/indian-woman-working-laptop-street-cafe-wearing-stylish-smart-clothes-jacket-glasses_1157-48457.jpg"
+          alt="Service 2"
+          class="mb-5 rounded-2xl w-full h-52 object-cover"
+        />
+        <h2 class="text-xl font-semibold mb-3">CONSULTING</h2>
+        <p class="mb-5">
+          We transform how organizations view their business. In a world where comprehensive Business Intelligence is crucial, having cost-effective talent is key.
+        </p>
+        <div>
+          <button class="bg-black text-white px-4 py-2 rounded-lg mr-3">Learn More</button>
+          <button class="bg-slate-300 text-gray-700 px-4 py-2 rounded-lg">Get Started</button>
+        </div>
+      </div>
+
+      <!-- Third Section -->
+      <div class="flex flex-col items-center text-center p-5 bg-white shadow-lg rounded-lg">
+        <img
+          src="https://img.freepik.com/premium-photo/two-business-professionals-discuss-project-modern-green-office-setting_1238717-1890.jpg?w=826"
+          alt="Service 3"
+          class="mb-5 rounded-2xl w-full h-52 object-cover"
+        />
+        <h2 class="text-xl font-semibold mb-3">PRODUCT DEVELOPMENT</h2>
+        <p class="mb-5">
+          Stay flexible with progressive business intelligence utilities. Rapidly evolve in the transforming digital age and make informed decisions with ease.
+        </p>
+        <div>
+          <button class="bg-black text-white px-4 py-2 rounded-lg mr-3">Learn More</button>
+          <button class="bg-slate-300 text-gray-700 px-4 py-2 rounded-lg">Get Started</button>
+        </div>
+      </div>
+
+      <!-- Fourth Section -->
+      <div class="flex flex-col items-center text-center p-5 bg-white shadow-lg rounded-lg">
+        <img
+          src="https://img.freepik.com/free-photo/group-people-running-podcast-together_23-2149434310.jpg"
+          alt="Service 4"
+          class="mb-5 rounded-2xl w-full h-52 object-cover"
+        />
+        <h2 class="text-xl font-semibold mb-3">SERVICES</h2>
+        <p class="mb-5">
+          Our curriculum prepares participants to take on challenges in Analytics within a few days after training, regardless of experience level.
+        </p>
+        <div>
+          <button class="bg-black text-white px-4 py-2 rounded-lg mr-3">Learn More</button>
+          <button class="bg-slate-300 text-gray-700 px-4 py-2 rounded-lg">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Container for the About Us section -->
+   <div class="w-11/12 max-w-6xl mx-auto py-10">
+        
+    <!-- First Row - About Us -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+        
+        <!-- Left Side - Text Content -->
+        <div class="flex flex-col justify-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-5">About Us</h2>
+            <p class="text-base md:text-lg mb-5">
+                At Genex, we are dedicated to pushing the boundaries of innovation through our deep expertise in Artificial Intelligence (AI) and advanced technology solutions. Our mission is to empower businesses with smarter, more efficient tools that drive success and foster growth. With a commitment to excellence and a passion for technology, we continuously strive to deliver exceptional service and groundbreaking solutions tailored to our clients' unique needs.
+            </p>
+            <button class="bg-black text-white px-4 py-2 rounded-lg w-32 md:w-40">
+                Learn More
+            </button>
+        </div>
+
+        <!-- Right Side - Image -->
+        <div class="flex justify-center md:justify-end">
+            <img src="https://img.freepik.com/free-photo/group-young-businesspeople-looking-document-office_23-2147839935.jpg" alt="About Us" class="rounded-lg shadow-md w-full h-auto">
+        </div>
+    </div>
+
+    <!-- Second Row - Featured Articles -->
+    <div class="mb-10">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-7">FEATURED ARTICLES</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- First Article -->
+            <div class="flex flex-col items-center text-center p-5 bg-white shadow-lg rounded-lg">
+                <img src="https://img.freepik.com/premium-photo/woman-sits-table-with-cup-coffee_1287624-24408.jpg?w=740" alt="Article 1" class="mb-4 rounded-lg w-full h-auto">
+                <h3 class="text-lg font-semibold mb-2">Ref Gartner article dated December 16, 2013</h3>
+                <p class="text-sm">
+                    Be a pioneer by 2017. Over the past several years, the BI platform market has grown largely through companies investing in IT-led consolidation projects to standardize IT-centric BI platforms for large-scale systems of record.
+                </p>
+            </div>
+
+            <!-- Second Article -->
+            <div class="flex flex-col items-center text-center p-5 bg-white shadow-lg rounded-lg">
+                <img src="https://img.freepik.com/premium-photo/man-reading-book-library-with-lamp-top_198067-1077929.jpg" alt="Article 2" class="mb-4 rounded-lg w-full h-auto">
+                <h3 class="text-lg font-semibold mb-2">Ref Gartner article dated January 27, 2015</h3>
+                <p class="text-sm">
+                    Data discovery is the new normal, but where do we go from here? Smart data discovery has the potential to expand access to sophisticated interactive analysis and insights to business consumers and nontraditional BI users.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+ <!-- Testimonials Section -->
+ <div class="w-11/12 max-w-6xl mx-auto py-10">
+    <!-- Central Heading and Quote -->
+    <h2 class="text-2xl md:text-3xl font-bold text-center mb-5">TESTIMONIALS</h2>
+    <p class="text-base md:text-lg text-center mb-10">
+        Don't just take our word for it, see what actual users of our service
+        have to say about their experience.
+    </p>
+
+    <!-- Cards Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- First Testimonial Card -->
+        <div class="p-6 bg-white shadow-lg rounded-lg text-center">
+            <p class="text-sm md:text-base mb-5">
+                My UI/UX design internship at GenexCorp was highly enriching. I
+                worked on the projects, honed my design skills, and learned from
+                experienced professionals in the team where I worked. This
+                experience deepened my understanding of design principles and
+                user-centered design, preparing me for future roles in the field.
+            </p>
+            <!-- Star Ratings -->
+            <div class="flex justify-center mb-3">
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+            </div>
+            <!-- User Profile and Name -->
+            <div class="flex flex-col items-center">
+                <i class="fas fa-user-circle text-4xl mb-2"></i>
+                <h4 class="text-lg font-semibold">John Doe</h4>
+            </div>
+        </div>
+
+        <!-- Second Testimonial Card -->
+        <div class="p-6 bg-white shadow-lg rounded-lg text-center">
+            <p class="text-sm md:text-base mb-5">
+                I had the opportunity to work with the software development team at
+                GenexCorp, where I learned a lot about the industry. Their support
+                and the exposure to real-world projects were immensely valuable for
+                my growth as a developer. I am grateful for this experience!
+            </p>
+            <div class="flex justify-center mb-3">
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+            </div>
+            <div class="flex flex-col items-center">
+                <i class="fas fa-user-circle text-4xl mb-2"></i>
+                <h4 class="text-lg font-semibold">Jane Smith</h4>
+            </div>
+        </div>
+
+        <!-- Third Testimonial Card -->
+        <div class="p-6 bg-white shadow-lg rounded-lg text-center">
+            <p class="text-sm md:text-base mb-5">
+                GenexCorp provided an excellent environment to apply my technical
+                skills and develop them further. The mentorship and collaboration
+                with senior developers boosted my confidence and helped me land my
+                first full-time role in the tech industry.
+            </p>
+            <div class="flex justify-center mb-3">
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+            </div>
+            <div class="flex flex-col items-center">
+                <i class="fas fa-user-circle text-4xl mb-2"></i>
+                <h4 class="text-lg font-semibold">Alice Johnson</h4>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+ <!-- Contact Us Section -->
+ <section class="bg-gray-200 p-6 md:p-10">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">Contact Us</h2>
+    <form class="max-w-lg mx-auto">
+        
+        <!-- Name Input -->
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm md:text-base">Name</label>
+            <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm md:text-base" placeholder="Your Name" />
+        </div>
+        
+        <!-- Email Input -->
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm md:text-base">Email</label>
+            <input type="email" class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm md:text-base" placeholder="Your Email" />
+        </div>
+        
+        <!-- Message Input -->
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm md:text-base">Message</label>
+            <textarea class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm md:text-base" placeholder="Your Message"></textarea>
+        </div>
+        
+        <!-- Submit Button -->
+        <button class="bg-black text-white py-2 px-4 rounded-lg w-full md:w-auto">Submit</button>
+    </form>
+</section>
+
+<footer class="text-white py-10">
+    <!-- First Row - Logo -->
+    <div class="flex justify-center mb-8">
+        <img src="../../assets/footer.png" alt="GenexCorp Logo" class="w-[950px]" />
+    </div>
+
+    <!-- Second Row - Footer Information -->
+    <div class="grid text-black grid-cols-1 md:grid-cols-3 gap-8 px-5 md:px-20">
+        <!-- First Column - About GenexCorp -->
+        <div>
+            <h3 class="text-lg mb-4 font-extrabold">ABOUT GENEXCORP</h3>
+            <p class="text-sm mb-5">
+                Some believe in the power of numbers. Some believe in the power of
+                technology. We believe in the power of people, power of human touch
+                which brings best out of the best and the impact people can have on
+                technology.
+            </p>
+            <!-- Social Media Icons -->
+            <div class="flex space-x-4">
+                <i class="fab fa-facebook-f text-xl cursor-pointer hover:text-blue-500"></i>
+                <i class="fab fa-twitter text-xl cursor-pointer hover:text-blue-400"></i>
+                <i class="fab fa-linkedin-in text-xl cursor-pointer hover:text-blue-700"></i>
+            </div>
+        </div>
+
+        <!-- Second Column - Quick Links -->
+        <div>
+            <h3 class="text-lg font-extrabold mb-4">QUICK LINKS</h3>
+            <ul class="space-y-2">
+                <li class="hover:underline cursor-pointer">HOME</li>
+                <li class="hover:underline cursor-pointer">Our Objective</li>
+                <li class="hover:underline cursor-pointer">Portfolio</li>
+                <li class="hover:underline cursor-pointer">Corporate Training</li>
+                <li class="hover:underline cursor-pointer">Career Augmentation Training</li>
+                <li class="hover:underline cursor-pointer">Jobs</li>
+                <li class="hover:underline cursor-pointer">Support</li>
+            </ul>
+        </div>
+
+        <!-- Third Column - Contact Information -->
+        <div>
+            <h3 class="text-lg font-extrabold mb-4">CONTACT INFORMATION</h3>
+            <p class="text-sm mb-2">
+                Address - VT Plaza, 4th Floor, KPHB Colony, Kukatpally, Road # 1,
+                Hyderabad - 500085, Telangana, India
+            </p>
+            <p class="text-sm mb-2">Phone: +91 9876543210</p>
+            <p class="text-sm">Email: info@genexcorp.com</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

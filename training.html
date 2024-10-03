@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genex Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <nav class="bg-gray-800 p-4">
+    <div class="flex justify-between items-center">
+      <!-- Logo -->
+      <div class="ml-4">
+        <img src="logo.png" alt="Company Logo" class="h-12">
+      </div>
+
+      <!-- Links for larger screens -->
+      <ul class="hidden md:flex md:space-x-8 md:mr-10 md:items-center">
+        <li>
+          <a href="/" class="text-white font-bold hover:text-yellow-400">
+            HOME
+          </a>
+        </li>
+        <li>
+          <a href="/services" class="text-white font-bold hover:text-yellow-400">
+            SERVICES
+          </a>
+        </li>
+        <li>
+          <a href="training.html" class="text-white font-bold hover:text-yellow-400">
+            TRAINING
+          </a>
+        </li>
+        <li>
+          <a href="/jobs" class="text-white font-bold hover:text-yellow-400">
+            JOBS
+          </a>
+        </li>
+        <li>
+          <a href="/support" class="text-white font-bold hover:text-yellow-400">
+            SUPPORT
+          </a>
+        </li>
+        <li>
+          <!-- Search Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white hover:text-yellow-400 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16l-4 4m0 0l4-4m-4 4V4" />
+          </svg>
+        </li>
+      </ul>
+
+      <!-- Mobile Menu (visible on small screens) -->
+      <ul class="md:hidden space-y-4">
+        <li>
+          <a href="/" class="text-white font-bold hover:text-yellow-400 block">
+            HOME
+          </a>
+        </li>
+        <li>
+          <a href="/services" class="text-white font-bold hover:text-yellow-400 block">
+            SERVICES
+          </a>
+        </li>
+        <li>
+          <a href="/training" class="text-white font-bold hover:text-yellow-400 block">
+            TRAINING
+          </a>
+        </li>
+        <li>
+          <a href="/jobs" class="text-white font-bold hover:text-yellow-400 block">
+            JOBS
+          </a>
+        </li>
+        <li>
+          <a href="/support" class="text-white font-bold hover:text-yellow-400 block">
+            SUPPORT
+          </a>
+        </li>
+        <li>
+          <!-- Search Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white hover:text-yellow-400 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16l-4 4m0 0l4-4m-4 4V4" />
+          </svg>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="bg-cover bg-center bg-no-repeat w-full h-screen overflow-x-hidden flex items-center"
+  style="background-image: url('../../assets/homeimg.jpg');">
+</section>
+
+<div class="min-h-screen bg-gray-100 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
+     <!-- Central Heading -->
+     <h1 class="text-3xl sm:text-4xl font-bold text-center mt-10 mb-12">
+        Explore Our Internship Opportunities
+    </h1>
+
+    <!-- Internship Cards -->
+    <div class="space-y-8">
+        <!-- Internship Card 1 -->
+        <div class="flex flex-col lg:flex-row items-center bg-white shadow-md rounded-3xl p-4 lg:p-8 w-full max-w-6xl mb-8 border border-black">
+            <!-- Left Image -->
+            <div class="lg:w-1/2 w-full mb-4 lg:mb-0">
+                <img src="https://images.pexels.com/photos/4467735/pexels-photo-4467735.jpeg" alt="Internship" class="rounded-lg object-cover w-full h-auto" />
+            </div>
+
+            <!-- Right Content -->
+            <div class="lg:w-1/2 w-full lg:pl-8">
+                <h2 class="text-2xl sm:text-3xl font-semibold mb-4">Splunk Development Internship</h2>
+                <p class="text-gray-700 mb-4">
+                    <strong>Description:</strong> Dive into the world of data analysis and machine learning with our Splunk Development Internship. You'll work on real-time data processing, create dashboards, and gain hands-on experience with Splunk's powerful analytics platform. Collaborate with our expert team and help us transform data into actionable insights.
+                </p>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <p class="text-lg font-bold mr-4">Review</p>
+                        <div class="flex text-yellow-500">
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                        </div>
+                    </div>
+                    <button class="text-white font-bold py-2 px-4 rounded-full bg-black hover:bg-gray-800 transition duration-300">
+                        View More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Internship Card 2 -->
+        <div class="flex flex-col lg:flex-row items-center bg-white shadow-md rounded-3xl p-4 lg:p-8 w-full max-w-6xl mb-8 border border-black">
+            <div class="lg:w-1/2 w-full mb-4 lg:mb-0">
+                <img src="https://images.pexels.com/photos/5324986/pexels-photo-5324986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Internship" class="rounded-lg object-cover w-full h-auto" />
+            </div>
+            <div class="lg:w-1/2 w-full lg:pl-8">
+                <h2 class="text-2xl sm:text-3xl font-semibold mb-4">DevOps Development Internship</h2>
+                <p class="text-gray-700 mb-4">
+                    <strong>Description:</strong> Join our DevOps Internship Program and be at the forefront of innovation in software development and IT operations. You’ll gain hands-on experience with automation, continuous integration, and deployment pipelines, helping to bridge the gap between development and operations.
+                </p>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <p class="text-lg font-bold mr-4">Review</p>
+                        <div class="flex text-yellow-500">
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                        </div>
+                    </div>
+                    <button class="text-white font-bold py-2 px-4 rounded-full bg-black hover:bg-gray-800 transition duration-300">
+                        View More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flex flex-col lg:flex-row items-center bg-white shadow-md rounded-3xl p-4 lg:p-8 w-full max-w-6xl mb-8 border border-black">
+            <div class="lg:w-1/2 w-full mb-4 lg:mb-0">
+                <img src="https://images.pexels.com/photos/4709285/pexels-photo-4709285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Internship" class="rounded-lg object-cover w-full h-auto" />
+            </div>
+            <div class="lg:w-1/2 w-full lg:pl-8">
+                <h2 class="text-2xl sm:text-3xl font-semibold mb-4">Web Development Internship</h2>
+                <p class="text-gray-700 mb-4">
+                    <strong>Description:</strong> Kickstart your career with our Web Development Internship. Gain hands-on experience in designing, coding, and maintaining websites. Work with cutting-edge technologies and collaborate with our expert team to build engaging and user-friendly web applications.
+                </p>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <p class="text-lg font-bold mr-4">Review</p>
+                        <div class="flex text-yellow-500">
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                        </div>
+                    </div>
+                    <button class="text-white font-bold py-2 px-4 rounded-full bg-black hover:bg-gray-800 transition duration-300">
+                        View More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="flex flex-col lg:flex-row items-center bg-white shadow-md rounded-3xl p-4 lg:p-8 w-full max-w-6xl mb-8 border border-black">
+            <div class="lg:w-1/2 w-full mb-4 lg:mb-0">
+                <img src="https://images.pexels.com/photos/5684450/pexels-photo-5684450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Internship" class="rounded-lg object-cover w-full h-auto" />
+            </div>
+            <div class="lg:w-1/2 w-full lg:pl-8">
+                <h2 class="text-2xl sm:text-3xl font-semibold mb-4">ServiceNow Development Internship</h2>
+                <p class="text-gray-700 mb-4">
+                    <strong>Description:</strong> Gain hands-on experience with our ServiceNow Development Internship, working on automating IT service management, and learning how to streamline operations with this platform.
+                </p>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <p class="text-lg font-bold mr-4">Review</p>
+                        <div class="flex text-yellow-500">
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                        </div>
+                    </div>
+                    <button class="text-white font-bold py-2 px-4 rounded-full bg-black hover:bg-gray-800 transition duration-300">
+                        View More
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Card 5 -->
+             
+        <div class="flex flex-col lg:flex-row items-center bg-white shadow-md rounded-3xl p-4 lg:p-8 w-full max-w-6xl mb-8 border border-black">
+            <div class="lg:w-1/2 w-full mb-4 lg:mb-0">
+                <img src="https://images.pexels.com/photos/5685821/pexels-photo-5685821.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            </div>
+            <div class="lg:w-1/2 w-full lg:pl-8">
+                <h2 class="text-2xl sm:text-3xl font-semibold mb-4">ChatBot Development Internship</h2>
+                <p class="text-gray-700 mb-4">
+                    <strong>Description:</strong> Learn how to design and develop AI-powered chatbots to provide automated customer support and improve business processes with our ChatBot Development Internship.
+                </p>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <p class="text-lg font-bold mr-4">Review</p>
+                        <div class="flex text-yellow-500">
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                        </div>
+                    </div>
+                    <button class="text-white font-bold py-2 px-4 rounded-full bg-black hover:bg-gray-800 transition duration-300">
+                        View More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+         <!-- Card 6 -->
+             
+         <div class="flex flex-col lg:flex-row items-center bg-white shadow-md rounded-3xl p-4 lg:p-8 w-full max-w-6xl mb-8 border border-black">
+            <div class="lg:w-1/2 w-full mb-4 lg:mb-0">
+                <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            </div>
+            <div class="lg:w-1/2 w-full lg:pl-8">
+                <h2 class="text-2xl sm:text-3xl font-semibold mb-4">AWS Development Internship</h2>
+                <p class="text-gray-700 mb-4">
+                    <strong>Description:</strong> Get hands-on experience with cloud technologies in our AWS Development Internship. Learn to architect, deploy, and manage scalable applications on AWS cloud infrastructure.
+                </p>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <p class="text-lg font-bold mr-4">Review</p>
+                        <div class="flex text-yellow-500">
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                        </div>
+                    </div>
+                    <button class="text-white font-bold py-2 px-4 rounded-full bg-black hover:bg-gray-800 transition duration-300">
+                        View More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+         <!-- Card 7 -->
+             
+         <div class="flex flex-col lg:flex-row items-center bg-white shadow-md rounded-3xl p-4 lg:p-8 w-full max-w-6xl mb-8 border border-black">
+            <div class="lg:w-1/2 w-full mb-4 lg:mb-0">
+                <img src="https://images.pexels.com/photos/5711939/pexels-photo-5711939.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            </div>
+            <div class="lg:w-1/2 w-full lg:pl-8">
+                <h2 class="text-2xl sm:text-3xl font-semibold mb-4">SAS Clinical Internship</h2>
+                <p class="text-gray-700 mb-4">
+                    <strong>Description:</strong> Immerse yourself in the field of clinical data analysis with our SAS Clinical internship. Gain practical experience in managing and analyzing clinical trial data using SAS software.
+                </p>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <p class="text-lg font-bold mr-4">Review</p>
+                        <div class="flex text-yellow-500">
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                            <span class="react-icon"><i class="fa fa-star"></i></span>
+                        </div>
+                    </div>
+                    <button class="text-white font-bold py-2 px-4 rounded-full bg-black hover:bg-gray-800 transition duration-300">
+                        View More
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="flex flex-col items-center py-10 px-4 md:px-10">
+    <!-- Internship Card -->
+    <div class="bg-white shadow-lg rounded-lg p-6 mb-6 w-full max-w-lg md:max-w-md">
+        <h2 class="text-2xl font-bold text-center md:text-left mb-4">UI/UX Internship</h2>
+        <div class="border rounded-lg p-4">
+            <h3 class="font-semibold">UI/UX Designer</h3>
+            <p class="text-gray-600">GENEX CORPORATE SERVICE PVT.LTD</p>
+            <div class="flex flex-col md:flex-row justify-between text-gray-700 mt-4 space-y-2 md:space-y-0">
+                <span class="flex items-center">
+                    <i class="fas fa-map-marker-alt mr-2"></i>Mumbai
+                </span>
+                <span class="flex items-center">
+                    <i class="fas fa-rupee-sign mr-2"></i>₹10,000/month
+                </span>
+                <span class="flex items-center">
+                    <i class="fas fa-calendar-alt mr-2"></i>3 Months
+                </span>
+            </div>
+            <p class="text-gray-500 mt-4">Posted - 2 days ago</p>
+            <p class="text-green-600 font-medium">Actively hiring</p>
+        </div>
+    </div>
+
+    <!-- Internship Details -->
+    <div class="bg-white shadow-lg rounded-lg p-6 w-full max-w-3xl">
+        <h3 class="text-xl font-bold mb-4">Overview</h3>
+        <p class="text-gray-600 mb-4">
+            Our UI/UX Design Internship program offers a unique opportunity to gain hands-on experience in creating and improving digital products...
+        </p>
+        
+        <h4 class="font-semibold mb-2">Objectives</h4>
+        <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li>Skill Development: Enhance your design skills with practical experience.</li>
+            <li>Industry Exposure: Gain insights into the UI/UX design industry.</li>
+            <li>Portfolio Building: Work on projects that you can showcase in your portfolio.</li>
+            <li>Professional Growth: Learn from experienced professionals and receive mentorship.</li>
+        </ul>
+        
+        <h4 class="font-semibold mb-2">Responsibilities</h4>
+        <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li>Design Work: Create wireframes, prototypes, and high-fidelity mockups.</li>
+            <li>User Research: Conduct user research and usability testing.</li>
+            <li>Feedback Integration: Incorporate feedback from users and stakeholders into design iterations.</li>
+            <li>Collaboration: Work closely with developers, product managers, and other team members.</li>
+        </ul>
+        
+        <h4 class="font-semibold mb-2">What You'll Learn</h4>
+        <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li>Design Principles: Understand and apply fundamental UI/UX design principles.</li>
+            <li>Tools & Technologies: Get familiar with industry-standard tools like Figma, Sketch, and Adobe XD.</li>
+            <li>User Research: Learn techniques for conducting user research and usability testing.</li>
+            <li>Wireframing & Prototyping: Develop wireframes and prototypes to bring design concepts to life.</li>
+        </ul>
+        
+        <h4 class="font-semibold mb-2">Requirements</h4>
+        <p class="text-gray-600 mb-4">
+            Educational Background: Currently pursuing or recently graduated in Design, Computer Science, or related field. Basic understanding of design principles and tools...
+        </p>
+
+        <div class="text-center">
+            <button class="bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-500">
+                Apply
+            </button>
+        </div>
+    </div>
+</div>
+
+  <!-- Testimonials Section -->
+  <div class="w-11/12 max-w-6xl mx-auto py-10">
+    <!-- Central Heading and Quote -->
+    <h2 class="text-2xl md:text-3xl font-bold text-center mb-5">TESTIMONIALS</h2>
+    <p class="text-base md:text-lg text-center mb-10">
+        Don't just take our word for it, see what actual users of our service
+        have to say about their experience.
+    </p>
+
+    <!-- Cards Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- First Testimonial Card -->
+        <div class="p-6 bg-white shadow-lg rounded-lg text-center">
+            <p class="text-sm md:text-base mb-5">
+                My UI/UX design internship at GenexCorp was highly enriching. I
+                worked on the projects, honed my design skills, and learned from
+                experienced professionals in the team where I worked. This
+                experience deepened my understanding of design principles and
+                user-centered design, preparing me for future roles in the field.
+            </p>
+            <!-- Star Ratings -->
+            <div class="flex justify-center mb-3">
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+            </div>
+            <!-- User Profile and Name -->
+            <div class="flex flex-col items-center">
+                <i class="fas fa-user-circle text-4xl mb-2"></i>
+                <h4 class="text-lg font-semibold">John Doe</h4>
+            </div>
+        </div>
+
+        <!-- Second Testimonial Card -->
+        <div class="p-6 bg-white shadow-lg rounded-lg text-center">
+            <p class="text-sm md:text-base mb-5">
+                I had the opportunity to work with the software development team at
+                GenexCorp, where I learned a lot about the industry. Their support
+                and the exposure to real-world projects were immensely valuable for
+                my growth as a developer. I am grateful for this experience!
+            </p>
+            <div class="flex justify-center mb-3">
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+            </div>
+            <div class="flex flex-col items-center">
+                <i class="fas fa-user-circle text-4xl mb-2"></i>
+                <h4 class="text-lg font-semibold">Jane Smith</h4>
+            </div>
+        </div>
+
+        <!-- Third Testimonial Card -->
+        <div class="p-6 bg-white shadow-lg rounded-lg text-center">
+            <p class="text-sm md:text-base mb-5">
+                GenexCorp provided an excellent environment to apply my technical
+                skills and develop them further. The mentorship and collaboration
+                with senior developers boosted my confidence and helped me land my
+                first full-time role in the tech industry.
+            </p>
+            <div class="flex justify-center mb-3">
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                <i class="fas fa-star text-yellow-500 text-xl"></i>
+            </div>
+            <div class="flex flex-col items-center">
+                <i class="fas fa-user-circle text-4xl mb-2"></i>
+                <h4 class="text-lg font-semibold">Alice Johnson</h4>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="text-white py-10">
+    <!-- First Row - Logo -->
+   
+
+    <!-- Second Row - Footer Information -->
+    <div class="grid text-black grid-cols-1 md:grid-cols-3 gap-8 px-5 md:px-20">
+        <!-- First Column - About GenexCorp -->
+        <div>
+            <h3 class="text-lg mb-4 font-extrabold">ABOUT GENEXCORP</h3>
+            <p class="text-sm mb-5">
+                Some believe in the power of numbers. Some believe in the power of
+                technology. We believe in the power of people, power of human touch
+                which brings best out of the best and the impact people can have on
+                technology.
+            </p>
+            <!-- Social Media Icons -->
+            <div class="flex space-x-4">
+                <i class="fab fa-facebook-f text-xl cursor-pointer hover:text-blue-500"></i>
+                <i class="fab fa-twitter text-xl cursor-pointer hover:text-blue-400"></i>
+                <i class="fab fa-linkedin-in text-xl cursor-pointer hover:text-blue-700"></i>
+            </div>
+        </div>
+
+        <!-- Second Column - Quick Links -->
+        <div>
+            <h3 class="text-lg font-extrabold mb-4">QUICK LINKS</h3>
+            <ul class="space-y-2">
+                <li class="hover:underline cursor-pointer">HOME</li>
+                <li class="hover:underline cursor-pointer">Our Objective</li>
+                <li class="hover:underline cursor-pointer">Portfolio</li>
+                <li class="hover:underline cursor-pointer">Corporate Training</li>
+                <li class="hover:underline cursor-pointer">Career Augmentation Training</li>
+                <li class="hover:underline cursor-pointer">Jobs</li>
+                <li class="hover:underline cursor-pointer">Support</li>
+            </ul>
+        </div>
+
+        <!-- Third Column - Contact Information -->
+        <div>
+            <h3 class="text-lg font-extrabold mb-4">CONTACT INFORMATION</h3>
+            <p class="text-sm mb-2">
+                Address - VT Plaza, 4th Floor, KPHB Colony, Kukatpally, Road # 1,
+                Hyderabad - 500085, Telangana, India
+            </p>
+            <p class="text-sm mb-2">Phone: +91 9876543210</p>
+            <p class="text-sm">Email: info@genexcorp.com</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
