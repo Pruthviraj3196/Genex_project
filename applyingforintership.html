@@ -11,66 +11,78 @@
 
 <body>
 
-    <!-- Navbar -->
-  <nav class="bg-gray-800 p-4">
-    <div class="flex justify-between items-center">
-      <!-- Logo -->
-      <div class="ml-4">
-        <img src="assets/logo.png" alt="Company Logo" class="h-12">
-      </div>
-
-      <!-- Links for larger screens -->
-      <ul class="hidden md:flex md:space-x-8 md:mr-10 md:items-center">
-        <li>
-          <a href="/" class="text-white font-bold hover:text-yellow-400">HOME</a>
-        </li>
-        <li>
-          <a href="/service.html" class="text-white font-bold hover:text-yellow-400">SERVICES</a>
-        </li>
-        <li>
-          <a href="/training.html" class="text-white font-bold hover:text-yellow-400">TRAINING</a>
-        </li>
-        <li>
-          <a href="/jobs" class="text-white font-bold hover:text-yellow-400">JOBS</a>
-        </li>
-        <li>
-          <a href="/support" class="text-white font-bold hover:text-yellow-400">SUPPORT</a>
-        </li>
-        <li>
-          <!-- Search Icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white hover:text-yellow-400 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16l-4 4m0 0l4-4m-4 4V4" />
-          </svg>
-        </li>
-      </ul>
-
-      <!-- Mobile Menu (visible on small screens) -->
-      <ul class="md:hidden space-y-4">
-        <li>
-          <a href="/" class="text-white font-bold hover:text-yellow-400 block">HOME</a>
-        </li>
-        <li>
-          <a href="/services" class="text-white font-bold hover:text-yellow-400 block">SERVICES</a>
-        </li>
-        <li>
-          <a href="/training" class="text-white font-bold hover:text-yellow-400 block">TRAINING</a>
-        </li>
-        <li>
-          <a href="/jobs" class="text-white font-bold hover:text-yellow-400 block">JOBS</a>
-        </li>
-        <li>
-          <a href="/support" class="text-white font-bold hover:text-yellow-400 block">SUPPORT</a>
-        </li>
-        <li>
-          <!-- Search Icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white hover:text-yellow-400 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16l-4 4m0 0l4-4m-4 4V4" />
-          </svg>
-        </li>
-      </ul>
+   <!-- Navbar -->
+<nav class="bg-gray-800 p-4">
+  <div class="flex justify-between items-center">
+    <!-- Logo -->
+    <div class="ml-4">
+      <img src="assets/logo.png" alt="Company Logo" class="h-12">
     </div>
-  </nav>
 
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden mr-4">
+      <button id="menu-toggle" class="text-white focus:outline-none">
+        <i class="fas fa-bars h-6 w-6"></i> <!-- Font Awesome bars icon for the mobile menu -->
+      </button>
+    </div>
+
+    <!-- Links for larger screens -->
+    <ul class="hidden md:flex md:space-x-8 md:mr-10 md:items-center">
+      <li>
+        <a href="/" class="text-white font-bold hover:text-yellow-400">HOME</a>
+      </li>
+      <li>
+        <a href="/service.html" class="text-white font-bold hover:text-yellow-400">SERVICES</a>
+      </li>
+      <li>
+        <a href="/training.html" class="text-white font-bold hover:text-yellow-400">TRAINING</a>
+      </li>
+      <li>
+        <a href="/jobs" class="text-white font-bold hover:text-yellow-400">JOBS</a>
+      </li>
+      <li>
+        <a href="/support" class="text-white font-bold hover:text-yellow-400">SUPPORT</a>
+      </li>
+      <li>
+        <!-- Search Icon using Font Awesome -->
+        <i class="fas fa-search h-6 w-6 text-white hover:text-yellow-400 cursor-pointer"></i>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Mobile Menu (initially hidden) -->
+  <ul id="mobile-menu" class="hidden md:hidden mt-4 space-y-4">
+    <li>
+      <a href="/" class="text-white font-bold hover:text-yellow-400 block">HOME</a>
+    </li>
+    <li>
+      <a href="/service.html" class="text-white font-bold hover:text-yellow-400 block">SERVICES</a>
+    </li>
+    <li>
+      <a href="/training.html" class="text-white font-bold hover:text-yellow-400 block">TRAINING</a>
+    </li>
+    <li>
+      <a href="/jobs" class="text-white font-bold hover:text-yellow-400 block">JOBS</a>
+    </li>
+    <li>
+      <a href="/support" class="text-white font-bold hover:text-yellow-400 block">SUPPORT</a>
+    </li>
+    <li>
+      <!-- Search Icon for Mobile using Font Awesome -->
+      <i class="fas fa-search h-6 w-6 text-white hover:text-yellow-400 cursor-pointer"></i>
+    </li>
+  </ul>
+</nav>
+
+<!-- Tailwind CSS requires JavaScript to toggle the mobile menu -->
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
   <!-- Apply for UI/UX Internship Section -->
   <div class="max-w-4xl mx-auto p-8 border border-black rounded-lg shadow-lg mt-20">
     <div class="text-center">
